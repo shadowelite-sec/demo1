@@ -1,25 +1,35 @@
 body {
-  background-color: #0b0f10;
+  background-color: #282828;
   color: white;
   font-family: "Curier New", monospace;
-  font-size: 16px;
+  font-size: 10px;
   line-height: 1.6em;
   margin: 0;
 }
 
 .container {
-  width: 80%;
+  width: 95%;
   margin: auto;
   overflow: hidden;
 }
 
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 #main-head {
-  background-color: coral;
+  background-color: #9f3c3a;
   color: white;
 }
 
 #navbar {
-  background-color: darkgray;
+  background-color: black;
   color: white;
 }
 
@@ -29,35 +39,51 @@ body {
 }
 
 #navbar li {
-  display: inline;
+  display: inline-block;
 }
 
 #navbar a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   padding-right: 15px;
 }
 
 #showcase {
-  background-color: #0000;
-  background-position: center right;
+  background-image: url(../img/bg.png);
+  background-position: center center;
   height: 300px;
 }
 
 #showcase h1 {
   text-align: center;
   color: white;
-  font-size: 40px;
+  font-size: 80px;
   line-height: 1.6em;
   padding-top: 30px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 2px #af3a03;
 }
 
+#sidebar h1 {
+  color: red;
+}
+#main h1 {
+  color: red;
+  padding-top: 10px;
+}
+
+/*#main p {
+  background-color: #0b0f10;
+}*/
+
 #main p[id="small"] {
+  background: transparent;
   font-size: 10px;
   padding-left: 100px;
 }
 #main-footer {
+  font-size: 7px;
   padding: 20px;
   margin-top: 40px;
   text-align: center;
